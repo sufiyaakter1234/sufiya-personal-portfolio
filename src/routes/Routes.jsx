@@ -36,7 +36,7 @@ export const router = createBrowserRouter([
                 element: <TechPartnerPage></TechPartnerPage>
             },
             {
-                path: '/services/Structure-Cabiling',
+                path: '/services/Structure-Cabling',
                 element: <StructuredCabilingPage></StructuredCabilingPage>
             },
             {
