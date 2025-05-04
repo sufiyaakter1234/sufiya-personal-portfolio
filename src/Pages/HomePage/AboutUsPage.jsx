@@ -1,5 +1,5 @@
 import React from 'react'
-import hero from '../../assets/Home/heroImage.jpg'
+import hero from '../../assets/Home/sufiya.png'
 import { Progress } from 'antd'
 
 const AboutUsPage = () => {

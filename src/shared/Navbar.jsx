@@ -111,7 +111,7 @@ export const Navbar = () => {
     <div className="bg-white text-black container m-auto">
       {/* Desktop Navbar */}
       <nav className="flex items-center justify-between gap-28 px-6 py-3">
-        <h1 className="text-2xl font-bold"><span className="bg-[#FF6300] px-2 text-white">L</span>ogo</h1>
+        <h1 className="text-2xl font-bold"><span className="bg-[#FF6300] px-2 text-white">S</span>ufiya</h1>
         <ul className="hidden md:flex lg:space-x-1 space-x-6 ">
           {items.map((item) => (
             <button key={item.key} className="list-none  px-4 hover:bg-[#FF6300] rounded hover:text-white">
