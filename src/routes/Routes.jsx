@@ -1,15 +1,9 @@
 
 import { Root } from "../layout/Root";
-import { AboutPage } from "../Pages/CompanyPage/AboutPage";
-import { CompanyPage } from "../Pages/CompanyPage/CompanyPage";
-import { TechPartnerPage } from "../Pages/CompanyPage/TechPartnerPage";
-import { ContuctUsPage } from "../Pages/ContactUsPage/ContuctUsPage";
+
 import { HomePage } from "../Pages/HomePage/HomePage";
 import { createBrowserRouter } from "react-router-dom";
-import { StructuredCabilingPage } from "../Pages/ServicesPage/StructuredCabilingPage";
-import { BreakFixServicesPage } from "../Pages/ServicesPage/BreakFixServicesPage";
-import { SubmitTicketPage } from "../Pages/SubmitTicketPage.jsx/SubmitTicketPage";
-import { BlogPage } from "../Pages/BlogPage/BlogPage";
+
 import { Login } from "../Auth/Login";
 import { ForgotPassword } from "../Auth/ForgotPassword";
 import { Verification } from "../Auth/Verification";
@@ -27,34 +21,10 @@ export const router = createBrowserRouter([
                 path: '/',
                 element: <HomePage></HomePage>,
             },
-            {
-                path: '/company/about-us',
-                element: <AboutPage></AboutPage>
-            },
-            {
-                path: '/company/tech-pertners',
-                element: <TechPartnerPage></TechPartnerPage>
-            },
-            {
-                path: '/services/Structure-Cabling',
-                element: <StructuredCabilingPage></StructuredCabilingPage>
-            },
-            {
-                path: '/services/Break-FixServices',
-                element: <BreakFixServicesPage></BreakFixServicesPage>
-            },
-            {
-                path: '/contactUs',
-                element: <ContuctUsPage></ContuctUsPage>
-            },
-            {
-                path: '/blog',
-                element: <BlogPage></BlogPage>
-            },
-            {
-                path: '/submit-a-ticket',
-                element: <SubmitTicketPage></SubmitTicketPage>
-            },
+           
+           
+           
+           
 
             {
                 path: '/profilePage',

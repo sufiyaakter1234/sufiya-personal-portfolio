@@ -78,69 +78,45 @@ export const Navbar = () => {
       key: "home",
       label: <Link to="/">Home</Link>,
     },
+
     {
-      key: "company",
-      label: (
-        <Dropdown menu={{ items: dropdownItemsCompany }} trigger={["click"]}>
-          <Link onClick={(e) => e.preventDefault()}>
-            <Space>
-              Company
-              <DownOutlined />
-            </Space>
-          </Link>
-        </Dropdown>
-      ),
+      key: "about",
+      label: <Link to="/aboutUs">About Us</Link>,
     },
     {
       key: "services",
-      label: (
-        <Dropdown menu={{ items: dropdownItemsServices }} trigger={["click"]}>
-          <Link onClick={(e) => e.preventDefault()}>
-            <Space>
-              Services
-              <DownOutlined />
-            </Space>
-          </Link>
-        </Dropdown>
-      ),
+      label: <Link to="/Services">Services</Link>,
+    },
+    {
+      key: "Projects",
+      label: <Link to="/Projects">Projects</Link>,
+    },
+    {
+      key: "Testemonial",
+      label: <Link to="/Testemonial">Testemonial</Link>,
     },
     {
       key: "contactUs",
       label: <Link to="/contactUs">Contact Us</Link>,
     },
     {
-      key: "blog",
-      label: <Link to="/blog">Blog</Link>,
-    },
-    {
-      key: "submitTicket",
-      label: <Link to="/submit-a-ticket">Submit A Ticket</Link>,
-    },
-    {
       key: "profile",
       label: (
-        <Dropdown menu={{ items: dropdownItemsProfile }} trigger={["click"]}>
-          <Link onClick={(e) => e.preventDefault()}>
-            <Space>
-              <FaRegUserCircle />
-              <DownOutlined />
-            </Space>
-          </Link>
-        </Dropdown>
+        <Link to="/contactUs"><button className="bg-[#FF6300] text-white px-5 rounded py-2">Download</button></Link>
       ),
     },
   ];
 
   return (
-    <div className="bg-[#2E4CB9] text-white">
+    <div className="bg-white text-black container m-auto">
       {/* Desktop Navbar */}
-      <nav className="flex items-center lg:justify-center justify-between gap-28 px-6 py-3">
-        <img className="w-[50px]" src={Logo} alt="Logo" />
-        <ul className="hidden md:flex lg:space-x-16 space-x-6">
+      <nav className="flex items-center justify-between gap-28 px-6 py-3">
+        <h1 className="text-2xl font-bold"><span className="bg-[#FF6300] px-2 text-white">L</span>ogo</h1>
+        <ul className="hidden md:flex lg:space-x-1 space-x-6 ">
           {items.map((item) => (
-            <li key={item.key} className="list-none">
+            <button key={item.key} className="list-none  px-4 hover:bg-[#FF6300] rounded hover:text-white">
               {item.label}
-            </li>
+            </button>
           ))}
         </ul>
         <button
